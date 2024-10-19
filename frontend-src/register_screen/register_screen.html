@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="pomodoropythonicon.png">
-    <link rel="stylesheet" href="tela_cadastro.css" />
+    <link rel="icon" type="image/png" href="./css/Images/pomodoropythonicon.png">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Pymodoro - Tela de Cadastro</title>
 </head>
 <body>
@@ -14,20 +14,30 @@
                 <h1>Cadastre-se no Pymodoro</h1>
                 <form action="credenciais.py" method="POST">
                     <div class="forms-group">
-                        <label for="name">Nome Completo:</label>
-                        <input type="text" id="name" placeholder="Ex: Nome Sobrenome " required><br>
+                        <label for="name"></label>
+                        <input class="form-element" type="text" id="name" placeholder="Ex: Nome Sobrenome " required required oninvalid="this.setCustomValidity('Por favor preencha o campo nome do usuário.')" oninput="this.setCustomValidity('')"><br>
 
-                        <label for="username">Nome de Usuário:</label>
-                        <input type="text" id="username" placeholder="Ex: Nome Do Usuário" minlength="6" maxlength="16" required><br>
+                        <label for="username"></label>
+                        <input class="form-element" type="text" id="username" placeholder="Ex: Nome Do Usuário" minlength="6" maxlength="16" required oninvalid="this.setCustomValidity('Por favor preencha o campo de username do usuário.')" oninput="this.setCustomValidity('')"><br>
 
-                        <label for="password">Senha do Usuário:</label>
-                        <input type="password" id="password" placeholder="Ex: Senha123" minlength="8" maxlength="16" required><br>
+                        <label for="password"></label>
+                        <input class="form-element" class="form-element" type="password" id="password" placeholder="Ex: Senha123" minlength="8" maxlength="16" required required oninvalid="this.setCustomValidity('Por favor preencha o campo de senha do usuário.')" oninput="this.setCustomValidity('')"><br>
 
-                        <label for="email">Email do Usuário:</label>
-                        <input type="email" id="email" placeholder="Ex: example@example.com" required><br>
+                        <label for="email"></label>
+                        <input class="form-element" type="email" id="email" placeholder="Ex: example@example.com" required required oninvalid="this.setCustomValidity('Por favor preencha o campo de e-mail do usuário.')" oninput="this.setCustomValidity('')"><br>
                     </div>
-                    <input type="submit">
+                    <div class="register-account">
+                        <input type="submit" value="Registrar-se" class="form-element" />
+                    </div>
                 </form>
+                <div class="login-hiperlink">
+                    <label for="login-hiperlink">
+                    Já possui 
+                    <a href="" class="form-element" target="_parent"
+                        >conta?</a
+                    >
+                    </label>
+                </div>
             </div>
         </section>
     </main>
