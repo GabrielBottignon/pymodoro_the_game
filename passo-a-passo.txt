@@ -1,0 +1,21 @@
+## Estrutura do projeto para funcioamento de back e frontend
+
+- Dentro do projeto executar a criação do app (cada app terá o nome de apenas uma tela/função.)
+- Dentro do app criar as pastas static onde ficará as arquivos como CSS, PNG, JPEG etc.
+- Para referenciar dentro do HTML a estilização do css, passar a seguinte linha  (<link rel="stylesheet" href="{% static 'css/exemplo.css' %}" />)
+- Em 'views.py' definir as defs com o nome referente ao pedaço do projeto, retornar o render passando o nome do arquivo html.
+- Em 'urls.py' definir os padrões de urls de cada arquivo html, seguir seguinte lógica: path('login/', views.tela_login, name='tela_login') = 'login/' 
+será o endereço na página, views é chamada do .py e função,  e name deverá ser igual o nome do arquivo html.
+
+
+## Configuração de Settings para uso de front dentro do server
+
+# INSTALLED_APPS
+- Adicionar app criado.
+
+- Definir APP_DIRS como True.
+
+# STATIC
+- Definir o padrão de STATIC_URL sendo 'static/';
+- Adicionar dentro da listas statics de cada app em STATICFILES_DIRS;
+- Deifinir STATIC_ROOT como 'staticfiles'.
