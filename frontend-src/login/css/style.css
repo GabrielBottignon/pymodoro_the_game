@@ -2,13 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #161515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.navigation a:hover::after {
+  transform: scaleX(1);
 }
 .section-login-form {
   min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(./images/mountain.jpg);
+  background-color: #161515;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -30,7 +68,7 @@
 
 .section-login-form .container h1 {
   color: #161515;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 42px;
 }
@@ -44,7 +82,7 @@
   text-align: center;
   width: 100%;
   opacity: 90%;
-  font-style: italic
+  font-style: italic;
 }
 .section-login-form .container form {
   width: 100%;
@@ -148,10 +186,10 @@
   margin-top: 15px;
   width: 100%;
 }
+
 .section-login-form .container .forgot-hiperlink a:link,
 .section-login-form .container .register-hiperlink a:link {
-  text-decoration: underline;
-  color: #161515;
+  text-decoration: none;
 }
 
 .section-login-form .container .register-hiperlink {
@@ -178,7 +216,7 @@
 
 @media (min-width: 768px) {
   .section-login-form .container h1 {
-    font-size: 64px;
+    font-size: 48px;
   }
 }
 /*# sourceMappingURL=tela_login.css.map */
