@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.section-register-form {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-register-form .container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
