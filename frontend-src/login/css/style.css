@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Cabeçalho e tópicos de navegação */
 header {
   position: absolute;
   top: 0;
@@ -20,7 +21,7 @@ header {
 .navigation a {
   position: relative;
   font-size: 1.1em;
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: 500;
   margin-left: 40px;
@@ -33,7 +34,7 @@ header {
   bottom: -6px;
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
@@ -42,6 +43,8 @@ header {
 .navigation a:hover::after {
   transform: scaleX(1);
 }
+
+/* Tela de Login, campos, botões e checkbox */
 .section-login-form {
   min-height: 100vh;
   padding-top: 100px;
@@ -58,7 +61,7 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 32px;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 32px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -68,9 +71,14 @@ header {
 
 .section-login-form .container h1 {
   color: #161515;
-  font-size: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 30px;
   text-align: center;
-  margin-bottom: 42px;
+  width: 100%;
+  opacity: 90%;
+  font-style: italic;
 }
 
 .section-login-form .container p {
@@ -115,7 +123,7 @@ header {
   width: 100%;
   padding: 12px 16px;
   background-color: #161515;
-  color: white;
+  color: whitesmoke;
   border-radius: 8px;
 }
 .section-login-form .container form .submit-login {
@@ -131,7 +139,7 @@ header {
   outline: none;
   background-color: #161515;
   transition: 0.4s;
-  color: white;
+  color: whitesmoke;
   padding: 12px 50px;
   border-radius: 16px;
   cursor: pointer;
@@ -171,7 +179,7 @@ header {
   left: 100%;
   width: 0em;
   height: 0em;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -179,6 +187,8 @@ header {
 .section-login-form .container form .submit-login input[type="submit"]:focus {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* Hiperlinks para esqueci minha conta e registro de conta */
 .section-login-form .container .forgot-hiperlink,
 .section-login-form .container .register-hiperlink {
   font-size: small;
@@ -203,20 +213,70 @@ header {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .section-login-form .container {
-    padding: 64px;
+/* Media Queries - Responsividade */
+
+/* Smartphones (menor que 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
   }
-}
-@media (min-width: 1024px) {
+  .navigation a {
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
   .section-login-form .container {
-    padding: 128px;
+    padding: 20px;
+  }
+  .section-login-form .container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .section-login-form .container form .form-group {
+    max-width: 100%;
+  }
+  .section-login-form .container form .submit-login input[type="submit"] {
+    padding: 10px 30px;
   }
 }
 
-@media (min-width: 768px) {
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 15px 50px;
+  }
+  .navigation a {
+    margin-left: 30px;
+    font-size: 1em;
+  }
+  .section-login-form .container {
+    padding: 24px;
+  }
   .section-login-form .container h1 {
-    font-size: 48px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .section-login-form .container form .form-group {
+    max-width: 350px;
   }
 }
-/*# sourceMappingURL=tela_login.css.map */
+
+/* Desktops (maior que 1024px) */
+@media (min-width: 1024px) {
+  header {
+    padding: 20px 100px;
+  }
+  .navigation a {
+    margin-left: 40px;
+    font-size: 1.1em;
+  }
+  .section-login-form .container {
+    padding: 32px;
+  }
+  .section-login-form .container h1 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .section-login-form .container form .form-group {
+    max-width: 400px;
+  }
+}
