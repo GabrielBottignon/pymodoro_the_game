@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.section-login-form {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url('/static/images/mountain.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-login-form .container {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .section-login-form .container {
+    padding: 64px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-login-form .container {
+    padding: 128px;
+  }
+}
+.section-login-form .container h1 {
+  color: #161515;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 42px;
+}
+@media (min-width: 768px) {
+  .section-login-form .container h1 {
+    font-size: 42px;
+  }
+}
+.section-login-form .container p {
+  color: #161515;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+}
+.section-login-form .container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.section-login-form .container form .form-group {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-login-form .container form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+}
+.section-login-form .container form .form-group .form-element {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #161515;
+  color: white;
+  border-radius: 8px;
+}
+.section-login-form .container form .submit-login {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.section-login-form .container form .submit-login input[type=submit] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background-color: #161515;
+  transition: 0.4s;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+.section-login-form .container form .submit-login input[type=submit]:focus {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.section-login-form .container .forgot-hiperlink, .section-login-form .container .register-hiperlink {
+  font-size: small;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.section-login-form .container .forgot-hiperlink a:link, .section-login-form .container .register-hiperlink a:link {
+  text-decoration: underline;
+  color: #161515;
+}
+.section-login-form .container .forgot-hiperlink {
+  margin-bottom: -5px;
+  text-align: center;
+}
+.section-login-form .container .register-hiperlink {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  text-align: center;
+}/*# sourceMappingURL=tela_login.css.map */
